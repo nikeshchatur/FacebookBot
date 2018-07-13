@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>me.nikesh.jbot</groupId>
+        <artifactId>jbot-parent</artifactId>
+        <version>4.1.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>jbot</artifactId>
+    <version>4.1.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>JBot</name>
+    <description>Make  Facebook bots in Java in minutes.</description>
+    <url>https://github.com/nikesh/jbot</url>
+
+    <developers>
+        <developer>
+            <id>Nikesh</id>
+            <name>Nikesh Chaturvedi</name>
+            <email>hi at nikesh.me</email>
+            <organization>nikesh.me</organization>
+            <organizationUrl>http://www.nikesh.me</organizationUrl>
+        </developer>
+    </developers>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
