@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * @author nikesh
+ * @author ramswaroop
  * @version 18/09/2016
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -31,37 +31,37 @@ public class Payload {
     private String text;
     @JsonProperty("recipient_name")
     private String recipientName;
-    @JsonProperty("order_number")
-    private String orderNumber;
-    private String currency;
-    @JsonProperty("base_price")
-    private String basePrice;
-    @JsonProperty("total_price")
-    private String totalPrice;
-    private String tax;
-    @JsonProperty("payment_method")
-    private String paymentMethod;
-    @JsonProperty("order_url")
-    private String orderUrl;
-    private ShippingAddress address;
-    private Summary summary;
+ ////   @JsonProperty("order_number")
+ //   private String orderNumber;
+   // private String currency;
+   // @JsonProperty("base_price")
+  //  private String basePrice;
+  //  @JsonProperty("total_price")
+  //  private String totalPrice;
+  //  private String tax;
+   // @JsonProperty("payment_method")
+   // private String paymentMethod;
+   // @JsonProperty("order_url")
+  //  private String orderUrl;
+   // private ShippingAddress address;
+   // private Summary summary;
     private Button[] buttons;
     private Element[] elements;
-    private Amount[] adjustments;
-    @JsonProperty("pnr_number")
-    private String pnrNumber;
-    @JsonProperty("checkin_url")
-    private String checkinUrl;
-    @JsonProperty("boarding_pass")
-    private BoardingPass[] boardingPass;
-    @JsonProperty("flight_info")
-    private FlightInfo[] flightInfo;
-    @JsonProperty("update_flight_info")
-    private FlightInfo updateFlightInfo;
-    private Passenger[] passengerInfo;
-    private Passenger[] passengerSegmentInfo;
-    @JsonProperty("price_info")
-    private Amount[] priceInfo;
+  //  private Amount[] adjustments;
+   // @JsonProperty("pnr_number")
+ //   private String pnrNumber;
+  //  @JsonProperty("checkin_url")
+ //   private String checkinUrl;
+  //  @JsonProperty("boarding_pass")
+   // private BoardingPass[] boardingPass;
+   // @JsonProperty("flight_info")
+   // private FlightInfo[] flightInfo;
+   // @JsonProperty("update_flight_info")
+    //private FlightInfo updateFlightInfo;
+   // private Passenger[] passengerInfo;
+   // private Passenger[] passengerSegmentInfo;
+    //@JsonProperty("price_info")
+   // private Amount[] priceInfo;
     private Long timestamp;
 
     public String getUrl() {
@@ -166,7 +166,7 @@ public class Payload {
         this.recipientName = recipientName;
         return this;
     }
-
+/*
     public String getOrderNumber() {
         return orderNumber;
     }
@@ -247,7 +247,7 @@ public class Payload {
         this.summary = summary;
         return this;
     }
-
+ */
     public Button[] getButtons() {
         return buttons;
     }
@@ -266,7 +266,7 @@ public class Payload {
         return this;
     }
 
-    public Amount[] getAdjustments() {
+ /*   public Amount[] getAdjustments() {
         return adjustments;
     }
 
@@ -346,7 +346,7 @@ public class Payload {
         this.priceInfo = priceInfo;
         return this;
     }
-
+  */
     public Long getTimestamp() {
         return timestamp;
     }

@@ -30,13 +30,13 @@ public class Event {
     private Postback postback;
     private Referral optin;
     private Referral referral;
-    @JsonProperty("account_linking")
+   @JsonProperty("account_linking")
     private AccountLinking accountLinking;
     private Read read;
     private Delivery delivery;
-    @JsonProperty("checkout_update")
-    private CheckoutUpdate checkoutUpdate;
-    private Payment payment;
+   /* @JsonProperty("checkout_update")
+    private CheckoutUpdate checkoutUpdate;*/
+   // private Payment payment;
     @JsonProperty("sender_action")
     private String senderAction;
     @JsonProperty("setting_type")
@@ -49,8 +49,8 @@ public class Event {
     private String domainActionType;
     @JsonProperty("thread_state")
     private String threadState;
-    @JsonProperty("payment_privacy_url")
-    private String paymentPrivacyUrl;
+  /*  @JsonProperty("payment_privacy_url")
+    private String paymentPrivacyUrl;*/
     @JsonProperty("hub.mode")
     private String mode;
     @JsonProperty("hub.verify_token")
@@ -161,23 +161,23 @@ public class Event {
         return this;
     }
 
-    public CheckoutUpdate getCheckoutUpdate() {
+  /*  public CheckoutUpdate getCheckoutUpdate() {
         return checkoutUpdate;
     }
 
     public Event setCheckoutUpdate(CheckoutUpdate checkoutUpdate) {
         this.checkoutUpdate = checkoutUpdate;
         return this;
-    }
+    }*/
 
-    public Payment getPayment() {
+   /* public Payment getPayment() {
         return payment;
     }
 
     public Event setPayment(Payment payment) {
         this.payment = payment;
         return this;
-    }
+    }*/
 
     public String getSenderAction() {
         return senderAction;
@@ -233,14 +233,14 @@ public class Event {
         return this;
     }
 
-    public String getPaymentPrivacyUrl() {
+  /*  public String getPaymentPrivacyUrl() {
         return paymentPrivacyUrl;
     }
 
     public Event setPaymentPrivacyUrl(String paymentPrivacyUrl) {
         this.paymentPrivacyUrl = paymentPrivacyUrl;
         return this;
-    }
+    }*/
 
     public String getMode() {
         return mode;

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * @author nikesh
+ * @author ramswaroop
  * @version 15/10/2016
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -26,9 +26,9 @@ public class Button {
     private String contentType;
     @JsonProperty("image_url")
     private String imageUrl;
-    @JsonProperty("payment_summary")
+   /* @JsonProperty("payment_summary")
     private PaymentSummary paymentSummary;
-
+*/
     public String getType() {
         return type;
     }
@@ -110,12 +110,12 @@ public class Button {
         return this;
     }
 
-    public PaymentSummary getPaymentSummary() {
+    /*public PaymentSummary getPaymentSummary() {
         return paymentSummary;
     }
 
     public Button setPaymentSummary(PaymentSummary paymentSummary) {
         this.paymentSummary = paymentSummary;
         return this;
-    }
+    }*/
 }
